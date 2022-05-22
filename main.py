@@ -97,8 +97,8 @@ class Linear_Regression:
 
 
 if __name__ == '__main__':
-    X = np.loadtxt('Price\\x.txt', dtype=float, ndmin=2)
-    Y = np.loadtxt('Price\\y.txt', dtype=float, ndmin=2)
+    X = np.loadtxt('data\\x.txt', dtype=float, ndmin=2)
+    Y = np.loadtxt('data\\y.txt', dtype=float, ndmin=2)
     Test = np.array(2014, dtype=float, ndmin=2)
     X, Test = add_bias(min_max_normalize(X, Test)[0], min_max_normalize(X, Test)[1])
 
